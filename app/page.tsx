@@ -115,7 +115,7 @@ export default function Home() {
         <section>
           <SectionHeader index="02" title="Nome da Mascote" />
           <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", margin: "0.5rem 0 1.5rem" }}>
-            O nosso pato musculado precisa de um nome. Vota no teu favorito ou sugere um novo!
+            O nosso pato musculado precisa de um nome. Vota no teu favorito!
           </p>
           <MascotPoll />
         </section>

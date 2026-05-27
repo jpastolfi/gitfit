@@ -33,5 +33,110 @@
     "options": ["1–2 vezes", "3–5 vezes", "6–7 vezes", "Só ao fim de semana"],
     "correctIndex": 1,
     "explanation": "A OMS recomenda pelo menos 150 minutos de atividade moderada por semana — o equivalente a 3 a 5 sessões."
+  },
+  {
+    "id": 6,
+    "question": "Qual é o maior músculo do corpo humano?",
+    "options": ["Bíceps", "Quadríceps", "Glúteo máximo", "Trapézio"],
+    "correctIndex": 2,
+    "explanation": "O glúteo máximo é o maior músculo do corpo, responsável pela extensão e rotação da anca."
+  },
+  {
+    "id": 7,
+    "question": "Quantas calorias tem 1 grama de proteína?",
+    "options": ["2 kcal", "4 kcal", "7 kcal", "9 kcal"],
+    "correctIndex": 1,
+    "explanation": "Proteínas e carboidratos fornecem 4 kcal por grama. As gorduras fornecem 9 kcal por grama."
+  },
+  {
+    "id": 8,
+    "question": "Qual vitamina é produzida pelo nosso corpo quando exposto ao sol?",
+    "options": ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina D"],
+    "correctIndex": 3,
+    "explanation": "A vitamina D é sintetizada pela pele quando exposta à radiação ultravioleta do sol, sendo essencial para os ossos e o sistema imunitário."
+  },
+  {
+    "id": 9,
+    "question": "O que significa IMC (Índice de Massa Corporal)?",
+    "options": ["Relação entre peso e altura²", "Percentagem de gordura corporal", "Nível de hidratação do corpo", "Quantidade de músculo no corpo"],
+    "correctIndex": 0,
+    "explanation": "O IMC calcula-se dividindo o peso (kg) pelo quadrado da altura (m²). É uma referência rápida, mas não distingue músculo de gordura."
+  },
+  {
+    "id": 10,
+    "question": "Qual nutriente é essencial para a saúde dos ossos?",
+    "options": ["Ferro", "Zinco", "Cálcio", "Potássio"],
+    "correctIndex": 2,
+    "explanation": "O cálcio é o mineral mais abundante nos ossos. A sua ingestão adequada, juntamente com a vitamina D, previne a osteoporose."
+  },
+  {
+    "id": 11,
+    "question": "O que é o 'overtraining'?",
+    "options": ["Treinar com muito peso", "Excesso de treino sem recuperação adequada", "Treinar mais de 1 hora seguida", "Repetir o mesmo exercício"],
+    "correctIndex": 1,
+    "explanation": "O overtraining ocorre quando o volume e intensidade do treino superam a capacidade de recuperação do corpo, levando a queda de desempenho e risco de lesão."
+  },
+  {
+    "id": 12,
+    "question": "Qual é a principal função dos carboidratos durante o exercício?",
+    "options": ["Construir músculo", "Hidratar o corpo", "Fonte de energia rápida", "Proteger as articulações"],
+    "correctIndex": 2,
+    "explanation": "Os carboidratos são a fonte de energia preferida do corpo durante exercício intenso, sendo convertidos em glucose e glicogénio muscular."
+  },
+  {
+    "id": 13,
+    "question": "Quantos passos por dia são geralmente recomendados para uma vida activa?",
+    "options": ["2.000 passos", "5.000 passos", "10.000 passos", "20.000 passos"],
+    "correctIndex": 2,
+    "explanation": "Os 10.000 passos diários são uma meta amplamente divulgada que corresponde a cerca de 8 km e contribui para reduzir o risco de doenças cardiovasculares."
+  },
+  {
+    "id": 14,
+    "question": "O que é o HIIT?",
+    "options": ["Um tipo de suplemento", "Treino intervalado de alta intensidade", "Uma dieta específica", "Um equipamento de ginásio"],
+    "correctIndex": 1,
+    "explanation": "HIIT (High-Intensity Interval Training) alterna períodos curtos de esforço máximo com períodos de recuperação, sendo muito eficiente para queimar calorias."
+  },
+  {
+    "id": 15,
+    "question": "Qual alimento é considerado uma excelente fonte de gorduras saudáveis?",
+    "options": ["Arroz branco", "Abacate", "Pão de forma", "Refrigerante diet"],
+    "correctIndex": 1,
+    "explanation": "O abacate é rico em ácidos gordos monoinsaturados (como o ácido oleico), que contribuem para a saúde cardiovascular e absorção de vitaminas lipossolúveis."
+  },
+  {
+    "id": 16,
+    "question": "Após um treino de força, quando ocorre o crescimento muscular?",
+    "options": ["Durante o treino", "Imediatamente após o treino", "Durante o descanso e sono", "Só no dia seguinte ao almoço"],
+    "correctIndex": 2,
+    "explanation": "O músculo cresce durante a recuperação, não durante o treino. O sono é o momento em que o hormônio do crescimento é mais libertado, reparando as fibras musculares."
+  },
+  {
+    "id": 17,
+    "question": "Qual é o macronutriente com mais calorias por grama?",
+    "options": ["Proteína (4 kcal/g)", "Carboidrato (4 kcal/g)", "Gordura (9 kcal/g)", "Fibra (2 kcal/g)"],
+    "correctIndex": 2,
+    "explanation": "A gordura fornece 9 kcal por grama — mais do dobro das proteínas e carboidratos (ambos com 4 kcal/g)."
+  },
+  {
+    "id": 18,
+    "question": "O que é o VO2 max?",
+    "options": ["Quantidade máxima de vitamina O2", "Capacidade máxima de consumo de oxigénio", "Velocidade máxima numa corrida", "Volume máximo dos pulmões"],
+    "correctIndex": 1,
+    "explanation": "O VO2 max mede a quantidade máxima de oxigénio que o corpo consegue usar durante exercício intenso — é um dos melhores indicadores de aptidão cardiovascular."
+  },
+  {
+    "id": 19,
+    "question": "Qual destes alimentos tem mais fibra?",
+    "options": ["Frango grelhado", "Arroz branco", "Lentilhas", "Atum em lata"],
+    "correctIndex": 2,
+    "explanation": "As lentilhas são ricas em fibra (cerca de 8g por 100g cozidas), ajudando na saciedade, digestão e controlo do açúcar no sangue."
+  },
+  {
+    "id": 20,
+    "question": "Qual é o nome do hormônio frequentemente associado ao stress?",
+    "options": ["Insulina", "Cortisol", "Adrenalina", "Testosterona"],
+    "correctIndex": 1,
+    "explanation": "O cortisol é o principal hormônio do stress. Níveis cronicamente elevados podem prejudicar o sono, o sistema imunitário e até dificultar a perda de gordura."
   }
 ]
