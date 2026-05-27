@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "Quantos litros de água são recomendados por dia para um adulto?",
+    "options": ["1 litro", "2 litros", "4 litros", "6 litros"],
+    "correctIndex": 1,
+    "explanation": "A recomendação geral é de cerca de 2 litros (8 copos) por dia, podendo variar com a actividade física e o clima."
+  },
+  {
+    "id": 2,
+    "question": "O que tem mais proteína por 100g: ovo ou atum?",
+    "options": ["Ovo (~13g)", "São iguais", "Atum (~25g)", "Depende da preparação"],
+    "correctIndex": 2,
+    "explanation": "O atum tem cerca de 25g de proteína por 100g, enquanto o ovo tem cerca de 13g — quase o dobro!"
+  },
+  {
+    "id": 3,
+    "question": "Quantas horas de sono são recomendadas para adultos?",
+    "options": ["4–5 horas", "5–6 horas", "6–7 horas", "7–9 horas"],
+    "correctIndex": 3,
+    "explanation": "A maioria dos adultos precisa de 7 a 9 horas de sono por noite para uma recuperação muscular e cognitiva ideal."
+  },
+  {
+    "id": 4,
+    "question": "Qual macronutriente é o principal responsável pela construção muscular?",
+    "options": ["Gordura", "Carboidrato", "Proteína", "Fibra"],
+    "correctIndex": 2,
+    "explanation": "A proteína fornece os aminoácidos necessários para reparar e construir fibras musculares após o exercício."
+  },
+  {
+    "id": 5,
+    "question": "Quantas vezes por semana a OMS recomenda praticar exercício físico moderado?",
+    "options": ["1–2 vezes", "3–5 vezes", "6–7 vezes", "Só ao fim de semana"],
+    "correctIndex": 1,
+    "explanation": "A OMS recomenda pelo menos 150 minutos de atividade moderada por semana — o equivalente a 3 a 5 sessões."
+  }
+]
