@@ -34,6 +34,7 @@ export const translations = {
     voteBtn: "Votar",
     yourVote: "← o teu voto",
     voteCount: (n: number) => `${n} ${n === 1 ? "voto" : "votos"}`,
+    voteSaved: "Voto registado!",
   },
   en: {
     langBtn: "PT",
@@ -70,6 +71,7 @@ export const translations = {
     voteBtn: "Vote",
     yourVote: "← your vote",
     voteCount: (n: number) => `${n} ${n === 1 ? "vote" : "votes"}`,
+    voteSaved: "Vote registered!",
   },
 } as const;
 
