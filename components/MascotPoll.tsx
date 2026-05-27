@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import type { T } from "@/lib/translations";
 
 type PollState = {
   votes: Record<string, number>;
@@ -26,7 +27,7 @@ function saveState(state: PollState) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
-export default function MascotPoll() {
+export default function MascotPoll({ t }: { t: T }) {
   const [poll, setPoll] = useState<PollState>({ votes: {}, voted: null });
   const [voteFor, setVoteFor] = useState<string | null>(null);
   const [hydrated, setHydrated] = useState(false);
@@ -37,6 +38,7 @@ export default function MascotPoll() {
   }, []);
 
   const total = Object.values(poll.votes).reduce((s, v) => s + v, 0);
+  const maxVotes = Math.max(...NAMES.map((n) => poll.votes[n] ?? 0), 0);
 
   function handleVote() {
     if (!voteFor || poll.voted) return;
@@ -51,8 +53,6 @@ export default function MascotPoll() {
   }
 
   if (!hydrated) return null;
-
-  const maxVotes = Math.max(...NAMES.map((n) => poll.votes[n] ?? 0), 0);
 
   return (
     <div
@@ -74,12 +74,8 @@ export default function MascotPoll() {
           alignItems: "center",
         }}
       >
-        <span>VOTAR NO NOME</span>
-        {total > 0 && (
-          <span style={{ color: "var(--orange)" }}>
-            {total} {total === 1 ? "voto" : "votos"}
-          </span>
-        )}
+        <span>{t.voteTitle}</span>
+        {total > 0 && <span style={{ color: "var(--orange)" }}>{t.voteCount(total)}</span>}
       </div>
 
       {poll.voted ? (
@@ -104,7 +100,7 @@ export default function MascotPoll() {
                     {isLeading && "🏆 "}
                     {name}
                     {name === poll.voted && (
-                      <span style={{ color: "var(--text-muted)", fontWeight: 400 }}> ← o teu voto</span>
+                      <span style={{ color: "var(--text-muted)", fontWeight: 400 }}> {t.yourVote}</span>
                     )}
                   </span>
                   <span>{pct}%</span>
@@ -150,7 +146,7 @@ export default function MascotPoll() {
             disabled={!voteFor}
             style={{ marginTop: "0.5rem" }}
           >
-            Votar
+            {t.voteBtn}
           </button>
         </div>
       )}

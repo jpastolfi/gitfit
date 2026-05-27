@@ -1,8 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Quiz from "@/components/Quiz";
 import MascotPoll from "@/components/MascotPoll";
+import { translations, type Lang } from "@/lib/translations";
 
 export default function Home() {
+  const [lang, setLang] = useState<Lang>("pt");
+  const t = translations[lang];
+
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "var(--bg)" }}>
       {/* Header */}
@@ -16,21 +23,39 @@ export default function Home() {
           backgroundColor: "var(--bg-card)",
         }}
       >
-        <Image
-          src="/mascot-picto.png"
-          alt="GitFit picto"
-          width={36}
-          height={36}
-          style={{ borderRadius: "50%" }}
-        />
-        <div>
-          <div style={{ fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em" }}>
-            GitFit
-          </div>
+        <Image src="/mascot-picto.png" alt="GitFit picto" width={36} height={36} style={{ borderRadius: "50%" }} />
+        <div style={{ flex: 1 }}>
+          <div style={{ fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em" }}>GitFit</div>
           <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", letterSpacing: "0.1em" }}>
-            42 LISBOA · WHERE COMMITS MEET GAINS
+            {t.headerSub}
           </div>
         </div>
+        <button
+          onClick={() => setLang((l) => (l === "pt" ? "en" : "pt"))}
+          style={{
+            padding: "0.35rem 0.85rem",
+            borderRadius: "0.3rem",
+            border: "2px solid var(--orange)",
+            backgroundColor: "transparent",
+            color: "var(--orange)",
+            fontFamily: "inherit",
+            fontSize: "0.8rem",
+            fontWeight: 700,
+            cursor: "pointer",
+            letterSpacing: "0.08em",
+            transition: "all 0.15s",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "var(--orange)";
+            e.currentTarget.style.color = "#000";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.color = "var(--orange)";
+          }}
+        >
+          {t.langBtn}
+        </button>
       </header>
 
       <main
@@ -53,42 +78,34 @@ export default function Home() {
             priority
             style={{ borderRadius: "1rem", maxWidth: "100%", height: "auto" }}
           />
-
           <div>
             <h1
               style={{
-                fontSize: "clamp(1.6rem, 5vw, 2.4rem)",
+                fontSize: "clamp(1rem, 4vw, 2rem)",
                 fontWeight: 700,
                 margin: 0,
                 letterSpacing: "0.04em",
+                whiteSpace: "nowrap",
               }}
             >
               <span style={{ color: "var(--orange)" }}>&lt;</span>
               {" "}Squat Quiz Challenge{" "}
               <span style={{ color: "var(--orange)" }}>/&gt;</span>
             </h1>
-            <p
-              style={{
-                color: "var(--text-muted)",
-                marginTop: "0.75rem",
-                fontSize: "0.95rem",
-                lineHeight: 1.7,
-              }}
-            >
-              Acerta o quiz → faz os squats → ganhas o pin! 🦆💪
+            <p style={{ color: "var(--text-muted)", marginTop: "0.75rem", fontSize: "0.95rem", lineHeight: 1.7 }}>
+              {t.heroSub}
             </p>
           </div>
 
-          {/* Prize info */}
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
-            <PrizeCard emoji="🏷️" label="Quiz completo" desc="Adesivo da 42 Lisboa" />
-            <PrizeCard emoji="📌" label="Quiz + 30–40 squats" desc="Pin fitness exclusivo" />
+            <PrizeCard icon={<TagIcon />} label={t.prize1Label} desc={t.prize1Desc} />
+            <PrizeCard icon={<DumbbellIcon />} label={t.prize2Label} desc={t.prize2Desc} />
           </div>
         </section>
 
         {/* Quiz */}
         <section>
-          <SectionHeader index="01" title="Squat Quiz" />
+          <SectionHeader index="01" title={t.section01} />
           <div
             style={{
               marginTop: "1.5rem",
@@ -98,20 +115,19 @@ export default function Home() {
               border: "1px solid var(--border)",
             }}
           >
-            <Quiz />
+            <Quiz t={t} />
           </div>
         </section>
 
         {/* Mascot Poll */}
         <section>
-          <SectionHeader index="02" title="Nome da Mascote" />
+          <SectionHeader index="02" title={t.section02} />
           <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", margin: "0.5rem 0 1.5rem" }}>
-            O nosso pato musculado precisa de um nome. Vota no teu favorito!
+            {t.pollDesc}
           </p>
-          <MascotPoll />
+          <MascotPoll t={t} />
         </section>
 
-        {/* Footer */}
         <footer
           style={{
             textAlign: "center",
@@ -148,15 +164,13 @@ function SectionHeader({ index, title }: { index: string; title: string }) {
       >
         {index}
       </span>
-      <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: 0, letterSpacing: "0.04em" }}>
-        {title}
-      </h2>
+      <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: 0, letterSpacing: "0.04em" }}>{title}</h2>
       <div style={{ flex: 1, height: "1px", backgroundColor: "var(--border)" }} />
     </div>
   );
 }
 
-function PrizeCard({ emoji, label, desc }: { emoji: string; label: string; desc: string }) {
+function PrizeCard({ icon, label, desc }: { icon: React.ReactNode; label: string; desc: string }) {
   return (
     <div
       style={{
@@ -170,7 +184,7 @@ function PrizeCard({ emoji, label, desc }: { emoji: string; label: string; desc:
         maxWidth: 220,
       }}
     >
-      <div style={{ fontSize: "1.75rem", marginBottom: "0.4rem" }}>{emoji}</div>
+      <div style={{ display: "flex", justifyContent: "center", marginBottom: "0.5rem" }}>{icon}</div>
       <div
         style={{
           fontSize: "0.7rem",
@@ -180,9 +194,25 @@ function PrizeCard({ emoji, label, desc }: { emoji: string; label: string; desc:
           marginBottom: "0.3rem",
         }}
       >
-        {label.toUpperCase()}
+        {label}
       </div>
       <div style={{ fontSize: "0.9rem", fontWeight: 600 }}>{desc}</div>
     </div>
+  );
+}
+
+function TagIcon() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--orange)" aria-hidden="true">
+      <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41s-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z" />
+    </svg>
+  );
+}
+
+function DumbbellIcon() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--orange)" aria-hidden="true">
+      <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 5.57 2 7.71 3.43 9.14 2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22 14.86 20.57 16.29 22 18.43 19.86 19.86 18.43 22 16.29 20.57 14.86z" />
+    </svg>
   );
 }
