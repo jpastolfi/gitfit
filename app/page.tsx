@@ -9,21 +9,25 @@ export default function Home() {
       <header
         style={{
           borderBottom: "1px solid var(--border)",
-          padding: "1rem 1.5rem",
+          padding: "0.75rem 1.5rem",
           display: "flex",
           alignItems: "center",
-          gap: "1rem",
+          gap: "0.75rem",
           backgroundColor: "var(--bg-card)",
         }}
       >
-        <Image src="/mascot.png" alt="GitFit mascot" width={40} height={40} />
+        <Image
+          src="/mascot-picto.png"
+          alt="GitFit picto"
+          width={36}
+          height={36}
+          style={{ borderRadius: "50%" }}
+        />
         <div>
-          <div style={{ fontWeight: 700, fontSize: "1.1rem", letterSpacing: "0.05em" }}>
-            <span style={{ color: "var(--orange)" }}>&lt;</span>
+          <div style={{ fontWeight: 700, fontSize: "1rem", letterSpacing: "0.04em" }}>
             GitFit
-            <span style={{ color: "var(--orange)" }}> /&gt;</span>
           </div>
-          <div style={{ fontSize: "0.7rem", color: "var(--text-muted)", letterSpacing: "0.1em" }}>
+          <div style={{ fontSize: "0.65rem", color: "var(--text-muted)", letterSpacing: "0.1em" }}>
             42 LISBOA · WHERE COMMITS MEET GAINS
           </div>
         </div>
@@ -40,26 +44,28 @@ export default function Home() {
         }}
       >
         {/* Hero */}
-        <section style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
+        <section style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.75rem" }}>
           <Image
-            src="/mascot.png"
-            alt="GitFit mascot duck"
-            width={160}
-            height={160}
+            src="/logo-full.png"
+            alt="GitFit logo"
+            width={340}
+            height={340}
             priority
+            style={{ borderRadius: "1rem", maxWidth: "100%", height: "auto" }}
           />
+
           <div>
             <h1
               style={{
-                fontSize: "clamp(2rem, 6vw, 3rem)",
+                fontSize: "clamp(1.6rem, 5vw, 2.4rem)",
                 fontWeight: 700,
                 margin: 0,
                 letterSpacing: "0.04em",
               }}
             >
               <span style={{ color: "var(--orange)" }}>&lt;</span>
-              Squat Quiz Challenge
-              <span style={{ color: "var(--orange)" }}> /&gt;</span>
+              {" "}Squat Quiz Challenge{" "}
+              <span style={{ color: "var(--orange)" }}>/&gt;</span>
             </h1>
             <p
               style={{
@@ -74,24 +80,9 @@ export default function Home() {
           </div>
 
           {/* Prize info */}
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}
-          >
-            <PrizeCard
-              emoji="🏷️"
-              label="Quiz completo"
-              desc="Adesivo da 42 Lisboa"
-            />
-            <PrizeCard
-              emoji="📌"
-              label="Quiz + 30–40 squats"
-              desc="Pin fitness exclusivo"
-            />
+          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
+            <PrizeCard emoji="🏷️" label="Quiz completo" desc="Adesivo da 42 Lisboa" />
+            <PrizeCard emoji="📌" label="Quiz + 30–40 squats" desc="Pin fitness exclusivo" />
           </div>
         </section>
 
@@ -157,14 +148,7 @@ function SectionHeader({ index, title }: { index: string; title: string }) {
       >
         {index}
       </span>
-      <h2
-        style={{
-          fontSize: "1.25rem",
-          fontWeight: 700,
-          margin: 0,
-          letterSpacing: "0.04em",
-        }}
-      >
+      <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: 0, letterSpacing: "0.04em" }}>
         {title}
       </h2>
       <div style={{ flex: 1, height: "1px", backgroundColor: "var(--border)" }} />
