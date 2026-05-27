@@ -76,4 +76,4 @@ export const translations = {
 } as const;
 
 export type Lang = keyof typeof translations;
-export type T = typeof translations.pt;
+export type T = (typeof translations)[Lang];
