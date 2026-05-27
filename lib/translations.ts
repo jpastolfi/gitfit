@@ -1,4 +1,39 @@
-export const translations = {
+export interface T {
+  langBtn: string;
+  headerSub: string;
+  heroSub: string;
+  prize1Label: string;
+  prize1Desc: string;
+  prize2Label: string;
+  prize2Desc: string;
+  section01: string;
+  section02: string;
+  pollDesc: string;
+  quizIntro: string;
+  startBtn: string;
+  questionLabel: string;
+  confirmBtn: string;
+  seeResultsBtn: string;
+  allCorrectMsg: string;
+  notAllCorrectMsg: string;
+  wrongSection: string;
+  yourAnswer: string;
+  correctAnswer: string;
+  tryAgainBtn: string;
+  correctOf: (s: number, t: number) => string;
+  squatTitle: string;
+  squatGoal: string;
+  squatReset: string;
+  squatUnit: string;
+  squatComplete: string;
+  voteTitle: string;
+  voteBtn: string;
+  yourVote: string;
+  voteCount: (n: number) => string;
+  voteSaved: string;
+}
+
+export const translations: Record<string, T> = {
   pt: {
     langBtn: "EN",
     headerSub: "42 LISBOA · WHERE COMMITS MEET GAINS",
@@ -10,7 +45,6 @@ export const translations = {
     section01: "Squat Quiz",
     section02: "Nome da Mascote",
     pollDesc: "O nosso pato musculado precisa de um nome. Vota no teu favorito!",
-    // Quiz
     quizIntro: "Responde a 4 perguntas sobre saúde e fitness.\nAcerta tudo e conquista o teu adesivo da 42 Lisboa! 🏅",
     startBtn: "< Iniciar Quiz />",
     questionLabel: "Pergunta",
@@ -22,18 +56,16 @@ export const translations = {
     yourAnswer: "A tua resposta:",
     correctAnswer: "Resposta correcta:",
     tryAgainBtn: "Tentar novamente",
-    correctOf: (s: number, t: number) => `${s}/${t} correctas`,
-    // Squat counter
+    correctOf: (s, t) => `${s}/${t} correctas`,
     squatTitle: "Contador de Squats",
     squatGoal: "Meta: 30 squats",
     squatReset: "Reiniciar",
     squatUnit: "squats",
     squatComplete: "🏆 30 squats! Pin conquistado!",
-    // Poll
     voteTitle: "VOTAR NO NOME",
     voteBtn: "Votar",
     yourVote: "← o teu voto",
-    voteCount: (n: number) => `${n} ${n === 1 ? "voto" : "votos"}`,
+    voteCount: (n) => `${n} ${n === 1 ? "voto" : "votos"}`,
     voteSaved: "Voto registado!",
   },
   en: {
@@ -47,7 +79,6 @@ export const translations = {
     section01: "Squat Quiz",
     section02: "Mascot Name",
     pollDesc: "Our buff duck needs a name. Vote for your favourite!",
-    // Quiz
     quizIntro: "Answer 4 health & fitness questions.\nGet them all right and win your 42 Lisboa sticker! 🏅",
     startBtn: "< Start Quiz />",
     questionLabel: "Question",
@@ -59,21 +90,18 @@ export const translations = {
     yourAnswer: "Your answer:",
     correctAnswer: "Correct answer:",
     tryAgainBtn: "Try again",
-    correctOf: (s: number, t: number) => `${s}/${t} correct`,
-    // Squat counter
+    correctOf: (s, t) => `${s}/${t} correct`,
     squatTitle: "Squat Counter",
     squatGoal: "Goal: 30 squats",
     squatReset: "Reset",
     squatUnit: "squats",
     squatComplete: "🏆 30 squats! Pin earned!",
-    // Poll
     voteTitle: "VOTE FOR THE NAME",
     voteBtn: "Vote",
     yourVote: "← your vote",
-    voteCount: (n: number) => `${n} ${n === 1 ? "vote" : "votes"}`,
+    voteCount: (n) => `${n} ${n === 1 ? "vote" : "votes"}`,
     voteSaved: "Vote registered!",
   },
-} as const;
+};
 
-export type Lang = keyof typeof translations;
-export type T = (typeof translations)[Lang];
+export type Lang = "pt" | "en";
