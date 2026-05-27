@@ -1,142 +1,322 @@
 [
   {
     "id": 1,
-    "question": "Quantos litros de água são recomendados por dia para um adulto?",
-    "options": ["1 litro", "2 litros", "4 litros", "6 litros"],
+    "question": {
+      "pt": "Quantos litros de água são recomendados por dia para um adulto?",
+      "en": "How many litres of water are recommended per day for an adult?"
+    },
+    "options": {
+      "pt": ["1 litro", "2 litros", "4 litros", "6 litros"],
+      "en": ["1 litre", "2 litres", "4 litres", "6 litres"]
+    },
     "correctIndex": 1,
-    "explanation": "A recomendação geral é de cerca de 2 litros (8 copos) por dia, podendo variar com a actividade física e o clima."
+    "explanation": {
+      "pt": "A recomendação geral é de cerca de 2 litros (8 copos) por dia, podendo variar com a actividade física e o clima.",
+      "en": "The general recommendation is around 2 litres (8 glasses) per day, which may vary with physical activity and climate."
+    }
   },
   {
     "id": 2,
-    "question": "O que tem mais proteína por 100g: ovo ou atum?",
-    "options": ["Ovo", "São iguais", "Atum", "Depende da preparação"],
+    "question": {
+      "pt": "O que tem mais proteína por 100g: ovo ou atum?",
+      "en": "Which has more protein per 100g: egg or tuna?"
+    },
+    "options": {
+      "pt": ["Ovo", "São iguais", "Atum", "Depende da preparação"],
+      "en": ["Egg", "They're equal", "Tuna", "Depends on preparation"]
+    },
     "correctIndex": 2,
-    "explanation": "O atum tem cerca de 25g de proteína por 100g, enquanto o ovo tem cerca de 13g — quase o dobro!"
+    "explanation": {
+      "pt": "O atum tem cerca de 25g de proteína por 100g, enquanto o ovo tem cerca de 13g — quase o dobro!",
+      "en": "Tuna has about 25g of protein per 100g, while egg has about 13g — nearly double!"
+    }
   },
   {
     "id": 3,
-    "question": "Quantas horas de sono são recomendadas para adultos?",
-    "options": ["4–5 horas", "5–6 horas", "6–7 horas", "7–9 horas"],
+    "question": {
+      "pt": "Quantas horas de sono são recomendadas para adultos?",
+      "en": "How many hours of sleep are recommended for adults?"
+    },
+    "options": {
+      "pt": ["4–5 horas", "5–6 horas", "6–7 horas", "7–9 horas"],
+      "en": ["4–5 hours", "5–6 hours", "6–7 hours", "7–9 hours"]
+    },
     "correctIndex": 3,
-    "explanation": "A maioria dos adultos precisa de 7 a 9 horas de sono por noite para uma recuperação muscular e cognitiva ideal."
+    "explanation": {
+      "pt": "A maioria dos adultos precisa de 7 a 9 horas de sono por noite para uma recuperação muscular e cognitiva ideal.",
+      "en": "Most adults need 7 to 9 hours of sleep per night for optimal muscle and cognitive recovery."
+    }
   },
   {
     "id": 4,
-    "question": "Qual macronutriente é o principal responsável pela construção muscular?",
-    "options": ["Gordura", "Carboidrato", "Proteína", "Fibra"],
+    "question": {
+      "pt": "Qual macronutriente é o principal responsável pela construção muscular?",
+      "en": "Which macronutrient is primarily responsible for building muscle?"
+    },
+    "options": {
+      "pt": ["Gordura", "Carboidrato", "Proteína", "Fibra"],
+      "en": ["Fat", "Carbohydrate", "Protein", "Fibre"]
+    },
     "correctIndex": 2,
-    "explanation": "A proteína fornece os aminoácidos necessários para reparar e construir fibras musculares após o exercício."
+    "explanation": {
+      "pt": "A proteína fornece os aminoácidos necessários para reparar e construir fibras musculares após o exercício.",
+      "en": "Protein provides the amino acids needed to repair and build muscle fibres after exercise."
+    }
   },
   {
     "id": 5,
-    "question": "Quantas vezes por semana a OMS recomenda praticar exercício físico moderado?",
-    "options": ["1–2 vezes", "3–5 vezes", "6–7 vezes", "Só ao fim de semana"],
+    "question": {
+      "pt": "Quantas vezes por semana a OMS recomenda praticar exercício físico moderado?",
+      "en": "How many times a week does the WHO recommend moderate physical exercise?"
+    },
+    "options": {
+      "pt": ["1–2 vezes", "3–5 vezes", "6–7 vezes", "Só ao fim de semana"],
+      "en": ["1–2 times", "3–5 times", "6–7 times", "Weekends only"]
+    },
     "correctIndex": 1,
-    "explanation": "A OMS recomenda pelo menos 150 minutos de atividade moderada por semana — o equivalente a 3 a 5 sessões."
+    "explanation": {
+      "pt": "A OMS recomenda pelo menos 150 minutos de atividade moderada por semana — o equivalente a 3 a 5 sessões.",
+      "en": "The WHO recommends at least 150 minutes of moderate activity per week — equivalent to 3 to 5 sessions."
+    }
   },
   {
     "id": 6,
-    "question": "Qual é o maior músculo do corpo humano?",
-    "options": ["Bíceps", "Quadríceps", "Glúteo máximo", "Trapézio"],
+    "question": {
+      "pt": "Qual é o maior músculo do corpo humano?",
+      "en": "What is the largest muscle in the human body?"
+    },
+    "options": {
+      "pt": ["Bíceps", "Quadríceps", "Glúteo máximo", "Trapézio"],
+      "en": ["Biceps", "Quadriceps", "Gluteus maximus", "Trapezius"]
+    },
     "correctIndex": 2,
-    "explanation": "O glúteo máximo é o maior músculo do corpo, responsável pela extensão e rotação da anca."
+    "explanation": {
+      "pt": "O glúteo máximo é o maior músculo do corpo, responsável pela extensão e rotação da anca.",
+      "en": "The gluteus maximus is the largest muscle in the body, responsible for hip extension and rotation."
+    }
   },
   {
     "id": 7,
-    "question": "Quantas calorias tem 1 grama de proteína?",
-    "options": ["2 kcal", "4 kcal", "7 kcal", "9 kcal"],
+    "question": {
+      "pt": "Quantas calorias tem 1 grama de proteína?",
+      "en": "How many calories are in 1 gram of protein?"
+    },
+    "options": {
+      "pt": ["2 kcal", "4 kcal", "7 kcal", "9 kcal"],
+      "en": ["2 kcal", "4 kcal", "7 kcal", "9 kcal"]
+    },
     "correctIndex": 1,
-    "explanation": "Proteínas e carboidratos fornecem 4 kcal por grama. As gorduras fornecem 9 kcal por grama."
+    "explanation": {
+      "pt": "Proteínas e carboidratos fornecem 4 kcal por grama. As gorduras fornecem 9 kcal por grama.",
+      "en": "Proteins and carbohydrates provide 4 kcal per gram. Fats provide 9 kcal per gram."
+    }
   },
   {
     "id": 8,
-    "question": "Qual vitamina é produzida pelo nosso corpo quando exposto ao sol?",
-    "options": ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina D"],
+    "question": {
+      "pt": "Qual vitamina é produzida pelo nosso corpo quando exposto ao sol?",
+      "en": "Which vitamin is produced by our body when exposed to sunlight?"
+    },
+    "options": {
+      "pt": ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina D"],
+      "en": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"]
+    },
     "correctIndex": 3,
-    "explanation": "A vitamina D é sintetizada pela pele quando exposta à radiação ultravioleta do sol, sendo essencial para os ossos e o sistema imunitário."
+    "explanation": {
+      "pt": "A vitamina D é sintetizada pela pele quando exposta à radiação ultravioleta do sol, sendo essencial para os ossos e o sistema imunitário.",
+      "en": "Vitamin D is synthesised by the skin when exposed to ultraviolet radiation from the sun, essential for bones and the immune system."
+    }
   },
   {
     "id": 9,
-    "question": "O que significa IMC (Índice de Massa Corporal)?",
-    "options": ["Relação entre peso e altura²", "Percentagem de gordura corporal", "Nível de hidratação do corpo", "Quantidade de músculo no corpo"],
+    "question": {
+      "pt": "O que significa IMC (Índice de Massa Corporal)?",
+      "en": "What does BMI (Body Mass Index) measure?"
+    },
+    "options": {
+      "pt": ["Relação entre peso e altura²", "Percentagem de gordura corporal", "Nível de hidratação do corpo", "Quantidade de músculo no corpo"],
+      "en": ["Ratio of weight to height²", "Percentage of body fat", "Body hydration level", "Amount of muscle in the body"]
+    },
     "correctIndex": 0,
-    "explanation": "O IMC calcula-se dividindo o peso (kg) pelo quadrado da altura (m²). É uma referência rápida, mas não distingue músculo de gordura."
+    "explanation": {
+      "pt": "O IMC calcula-se dividindo o peso (kg) pelo quadrado da altura (m²). É uma referência rápida, mas não distingue músculo de gordura.",
+      "en": "BMI is calculated by dividing weight (kg) by the square of height (m²). It's a quick reference, but doesn't distinguish muscle from fat."
+    }
   },
   {
     "id": 10,
-    "question": "Qual nutriente é essencial para a saúde dos ossos?",
-    "options": ["Ferro", "Zinco", "Cálcio", "Potássio"],
+    "question": {
+      "pt": "Qual nutriente é essencial para a saúde dos ossos?",
+      "en": "Which nutrient is essential for bone health?"
+    },
+    "options": {
+      "pt": ["Ferro", "Zinco", "Cálcio", "Potássio"],
+      "en": ["Iron", "Zinc", "Calcium", "Potassium"]
+    },
     "correctIndex": 2,
-    "explanation": "O cálcio é o mineral mais abundante nos ossos. A sua ingestão adequada, juntamente com a vitamina D, previne a osteoporose."
+    "explanation": {
+      "pt": "O cálcio é o mineral mais abundante nos ossos. A sua ingestão adequada, juntamente com a vitamina D, previne a osteoporose.",
+      "en": "Calcium is the most abundant mineral in bones. Adequate intake, together with vitamin D, prevents osteoporosis."
+    }
   },
   {
     "id": 11,
-    "question": "O que é o 'overtraining'?",
-    "options": ["Treinar com muito peso", "Excesso de treino sem recuperação adequada", "Treinar mais de 1 hora seguida", "Repetir o mesmo exercício"],
+    "question": {
+      "pt": "O que é o 'overtraining'?",
+      "en": "What is 'overtraining'?"
+    },
+    "options": {
+      "pt": ["Treinar com muito peso", "Excesso de treino sem recuperação adequada", "Treinar mais de 1 hora seguida", "Repetir o mesmo exercício"],
+      "en": ["Training with too much weight", "Excess training without adequate recovery", "Training for more than 1 hour straight", "Repeating the same exercise"]
+    },
     "correctIndex": 1,
-    "explanation": "O overtraining ocorre quando o volume e intensidade do treino superam a capacidade de recuperação do corpo, levando a queda de desempenho e risco de lesão."
+    "explanation": {
+      "pt": "O overtraining ocorre quando o volume e intensidade do treino superam a capacidade de recuperação do corpo, levando a queda de desempenho e risco de lesão.",
+      "en": "Overtraining occurs when training volume and intensity exceed the body's recovery capacity, leading to performance decline and injury risk."
+    }
   },
   {
     "id": 12,
-    "question": "Qual é a principal função dos carboidratos durante o exercício?",
-    "options": ["Construir músculo", "Hidratar o corpo", "Fonte de energia rápida", "Proteger as articulações"],
+    "question": {
+      "pt": "Qual é a principal função dos carboidratos durante o exercício?",
+      "en": "What is the main function of carbohydrates during exercise?"
+    },
+    "options": {
+      "pt": ["Construir músculo", "Hidratar o corpo", "Fonte de energia rápida", "Proteger as articulações"],
+      "en": ["Build muscle", "Hydrate the body", "Fast energy source", "Protect the joints"]
+    },
     "correctIndex": 2,
-    "explanation": "Os carboidratos são a fonte de energia preferida do corpo durante exercício intenso, sendo convertidos em glucose e glicogénio muscular."
+    "explanation": {
+      "pt": "Os carboidratos são a fonte de energia preferida do corpo durante exercício intenso, sendo convertidos em glucose e glicogénio muscular.",
+      "en": "Carbohydrates are the body's preferred energy source during intense exercise, being converted into glucose and muscle glycogen."
+    }
   },
   {
     "id": 13,
-    "question": "Quantos passos por dia são geralmente recomendados para uma vida activa?",
-    "options": ["2.000 passos", "5.000 passos", "10.000 passos", "20.000 passos"],
+    "question": {
+      "pt": "Quantos passos por dia são geralmente recomendados para uma vida activa?",
+      "en": "How many steps per day are generally recommended for an active lifestyle?"
+    },
+    "options": {
+      "pt": ["2.000 passos", "5.000 passos", "10.000 passos", "20.000 passos"],
+      "en": ["2,000 steps", "5,000 steps", "10,000 steps", "20,000 steps"]
+    },
     "correctIndex": 2,
-    "explanation": "Os 10.000 passos diários são uma meta amplamente divulgada que corresponde a cerca de 8 km e contribui para reduzir o risco de doenças cardiovasculares."
+    "explanation": {
+      "pt": "Os 10.000 passos diários são uma meta amplamente divulgada que corresponde a cerca de 8 km e contribui para reduzir o risco de doenças cardiovasculares.",
+      "en": "The 10,000 daily steps goal corresponds to about 8 km and helps reduce the risk of cardiovascular disease."
+    }
   },
   {
     "id": 14,
-    "question": "O que é o HIIT?",
-    "options": ["Um tipo de suplemento", "Treino intervalado de alta intensidade", "Uma dieta específica", "Um equipamento de ginásio"],
+    "question": {
+      "pt": "O que é o HIIT?",
+      "en": "What is HIIT?"
+    },
+    "options": {
+      "pt": ["Um tipo de suplemento", "Treino intervalado de alta intensidade", "Uma dieta específica", "Um equipamento de ginásio"],
+      "en": ["A type of supplement", "High-Intensity Interval Training", "A specific diet", "A gym machine"]
+    },
     "correctIndex": 1,
-    "explanation": "HIIT (High-Intensity Interval Training) alterna períodos curtos de esforço máximo com períodos de recuperação, sendo muito eficiente para queimar calorias."
+    "explanation": {
+      "pt": "HIIT (High-Intensity Interval Training) alterna períodos curtos de esforço máximo com períodos de recuperação, sendo muito eficiente para queimar calorias.",
+      "en": "HIIT (High-Intensity Interval Training) alternates short bursts of maximum effort with recovery periods, being very efficient for burning calories."
+    }
   },
   {
     "id": 15,
-    "question": "Qual alimento é considerado uma excelente fonte de gorduras saudáveis?",
-    "options": ["Arroz branco", "Abacate", "Pão de forma", "Refrigerante diet"],
+    "question": {
+      "pt": "Qual alimento é considerado uma excelente fonte de gorduras saudáveis?",
+      "en": "Which food is considered an excellent source of healthy fats?"
+    },
+    "options": {
+      "pt": ["Arroz branco", "Abacate", "Pão de forma", "Refrigerante diet"],
+      "en": ["White rice", "Avocado", "White bread", "Diet soda"]
+    },
     "correctIndex": 1,
-    "explanation": "O abacate é rico em ácidos gordos monoinsaturados (como o ácido oleico), que contribuem para a saúde cardiovascular e absorção de vitaminas lipossolúveis."
+    "explanation": {
+      "pt": "O abacate é rico em ácidos gordos monoinsaturados (como o ácido oleico), que contribuem para a saúde cardiovascular e absorção de vitaminas lipossolúveis.",
+      "en": "Avocado is rich in monounsaturated fatty acids (such as oleic acid), contributing to cardiovascular health and absorption of fat-soluble vitamins."
+    }
   },
   {
     "id": 16,
-    "question": "Após um treino de força, quando ocorre o crescimento muscular?",
-    "options": ["Durante o treino", "Imediatamente após o treino", "Durante o descanso e sono", "Só no dia seguinte ao almoço"],
+    "question": {
+      "pt": "Após um treino de força, quando ocorre o crescimento muscular?",
+      "en": "After a strength workout, when does muscle growth occur?"
+    },
+    "options": {
+      "pt": ["Durante o treino", "Imediatamente após o treino", "Durante o descanso e sono", "Só no dia seguinte ao almoço"],
+      "en": ["During the workout", "Immediately after the workout", "During rest and sleep", "Only the next day at lunchtime"]
+    },
     "correctIndex": 2,
-    "explanation": "O músculo cresce durante a recuperação, não durante o treino. O sono é o momento em que o hormônio do crescimento é mais libertado, reparando as fibras musculares."
+    "explanation": {
+      "pt": "O músculo cresce durante a recuperação, não durante o treino. O sono é o momento em que o hormônio do crescimento é mais libertado, reparando as fibras musculares.",
+      "en": "Muscle grows during recovery, not during training. Sleep is when growth hormone is released the most, repairing muscle fibres."
+    }
   },
   {
     "id": 17,
-    "question": "Qual é o macronutriente com mais calorias por grama?",
-    "options": ["Proteína", "Carboidrato", "Gordura", "Fibra"],
+    "question": {
+      "pt": "Qual é o macronutriente com mais calorias por grama?",
+      "en": "Which macronutrient has the most calories per gram?"
+    },
+    "options": {
+      "pt": ["Proteína", "Carboidrato", "Gordura", "Fibra"],
+      "en": ["Protein", "Carbohydrate", "Fat", "Fibre"]
+    },
     "correctIndex": 2,
-    "explanation": "A gordura fornece 9 kcal por grama — mais do dobro das proteínas e carboidratos (ambos com 4 kcal/g)."
+    "explanation": {
+      "pt": "A gordura fornece 9 kcal por grama — mais do dobro das proteínas e carboidratos (ambos com 4 kcal/g).",
+      "en": "Fat provides 9 kcal per gram — more than double that of proteins and carbohydrates (both at 4 kcal/g)."
+    }
   },
   {
     "id": 18,
-    "question": "O que é o VO2 max?",
-    "options": ["Quantidade máxima de vitamina O2", "Capacidade máxima de consumo de oxigénio", "Velocidade máxima numa corrida", "Volume máximo dos pulmões"],
+    "question": {
+      "pt": "O que é o VO2 max?",
+      "en": "What is VO2 max?"
+    },
+    "options": {
+      "pt": ["Quantidade máxima de vitamina O2", "Capacidade máxima de consumo de oxigénio", "Velocidade máxima numa corrida", "Volume máximo dos pulmões"],
+      "en": ["Maximum amount of vitamin O2", "Maximum oxygen consumption capacity", "Maximum running speed", "Maximum lung volume"]
+    },
     "correctIndex": 1,
-    "explanation": "O VO2 max mede a quantidade máxima de oxigénio que o corpo consegue usar durante exercício intenso — é um dos melhores indicadores de aptidão cardiovascular."
+    "explanation": {
+      "pt": "O VO2 max mede a quantidade máxima de oxigénio que o corpo consegue usar durante exercício intenso — é um dos melhores indicadores de aptidão cardiovascular.",
+      "en": "VO2 max measures the maximum amount of oxygen the body can use during intense exercise — one of the best indicators of cardiovascular fitness."
+    }
   },
   {
     "id": 19,
-    "question": "Qual destes alimentos tem mais fibra?",
-    "options": ["Frango grelhado", "Arroz branco", "Lentilhas", "Atum em lata"],
+    "question": {
+      "pt": "Qual destes alimentos tem mais fibra?",
+      "en": "Which of these foods has the most fibre?"
+    },
+    "options": {
+      "pt": ["Frango grelhado", "Arroz branco", "Lentilhas", "Atum em lata"],
+      "en": ["Grilled chicken", "White rice", "Lentils", "Canned tuna"]
+    },
     "correctIndex": 2,
-    "explanation": "As lentilhas são ricas em fibra (cerca de 8g por 100g cozidas), ajudando na saciedade, digestão e controlo do açúcar no sangue."
+    "explanation": {
+      "pt": "As lentilhas são ricas em fibra (cerca de 8g por 100g cozidas), ajudando na saciedade, digestão e controlo do açúcar no sangue.",
+      "en": "Lentils are rich in fibre (about 8g per 100g cooked), helping with satiety, digestion and blood sugar control."
+    }
   },
   {
     "id": 20,
-    "question": "Qual é o nome do hormônio frequentemente associado ao stress?",
-    "options": ["Insulina", "Cortisol", "Adrenalina", "Testosterona"],
+    "question": {
+      "pt": "Qual é o nome do hormônio frequentemente associado ao stress?",
+      "en": "What is the name of the hormone most associated with stress?"
+    },
+    "options": {
+      "pt": ["Insulina", "Cortisol", "Adrenalina", "Testosterona"],
+      "en": ["Insulin", "Cortisol", "Adrenaline", "Testosterone"]
+    },
     "correctIndex": 1,
-    "explanation": "O cortisol é o principal hormônio do stress. Níveis cronicamente elevados podem prejudicar o sono, o sistema imunitário e até dificultar a perda de gordura."
+    "explanation": {
+      "pt": "O cortisol é o principal hormônio do stress. Níveis cronicamente elevados podem prejudicar o sono, o sistema imunitário e até dificultar a perda de gordura.",
+      "en": "Cortisol is the main stress hormone. Chronically elevated levels can impair sleep, the immune system and even make fat loss harder."
+    }
   }
 ]

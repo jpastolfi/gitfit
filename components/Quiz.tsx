@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import allQuestions from "@/data/questions.json";
-import type { T } from "@/lib/translations";
+import type { T, Lang } from "@/lib/translations";
 
 type Question = (typeof allQuestions)[number];
 type Answer = { question: Question; selectedIndex: number; correct: boolean };
@@ -15,7 +15,7 @@ function pickRandom(pool: Question[], n: number): Question[] {
   return [...pool].sort(() => Math.random() - 0.5).slice(0, n);
 }
 
-export default function Quiz({ t }: { t: T }) {
+export default function Quiz({ t, lang }: { t: T; lang: Lang }) {
   const [step, setStep] = useState<"idle" | "playing" | "result">("idle");
   const [deck, setDeck] = useState<Question[]>([]);
   const [current, setCurrent] = useState(0);
@@ -181,9 +181,9 @@ export default function Quiz({ t }: { t: T }) {
                   gap: "0.4rem",
                 }}
               >
-                <div style={{ fontWeight: 700, marginBottom: "0.25rem" }}>{a.question.question}</div>
-                <div style={{ color: "#ef4444", fontSize: "0.9rem" }}>{t.yourAnswer} {a.question.options[a.selectedIndex]}</div>
-                <div style={{ color: "#22c55e", fontSize: "0.9rem" }}>{t.correctAnswer} {a.question.options[a.question.correctIndex]}</div>
+                <div style={{ fontWeight: 700, marginBottom: "0.25rem" }}>{a.question.question[lang]}</div>
+                <div style={{ color: "#ef4444", fontSize: "0.9rem" }}>{t.yourAnswer} {a.question.options[lang][a.selectedIndex]}</div>
+                <div style={{ color: "#22c55e", fontSize: "0.9rem" }}>{t.correctAnswer} {a.question.options[lang][a.question.correctIndex]}</div>
                 <div
                   style={{
                     fontSize: "0.85rem",
@@ -193,7 +193,7 @@ export default function Quiz({ t }: { t: T }) {
                     marginTop: "0.25rem",
                   }}
                 >
-                  {a.question.explanation}
+                  {a.question.explanation[lang]}
                 </div>
               </div>
             ))}
@@ -221,10 +221,10 @@ export default function Quiz({ t }: { t: T }) {
         <div className="progress-fill" style={{ width: `${progress}%` }} />
       </div>
 
-      <div style={{ fontWeight: 700, fontSize: "1.1rem", lineHeight: 1.5 }}>{q.question}</div>
+      <div style={{ fontWeight: 700, fontSize: "1.1rem", lineHeight: 1.5 }}>{q.question[lang]}</div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-        {q.options.map((opt, idx) => (
+        {q.options[lang].map((opt, idx) => (
           <button
             key={idx}
             className={`option-btn${selected === idx ? " selected" : ""}`}

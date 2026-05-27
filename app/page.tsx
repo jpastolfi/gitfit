@@ -115,7 +115,7 @@ export default function Home() {
               border: "1px solid var(--border)",
             }}
           >
-            <Quiz t={t} />
+            <Quiz t={t} lang={lang} />
           </div>
         </section>
 
