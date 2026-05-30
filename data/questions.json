@@ -318,5 +318,245 @@
       "pt": "O cortisol é o principal hormônio do stress. Níveis cronicamente elevados podem prejudicar o sono, o sistema imunitário e até dificultar a perda de gordura.",
       "en": "Cortisol is the main stress hormone. Chronically elevated levels can impair sleep, the immune system and even make fat loss harder."
     }
+  },
+  {
+    "id": 21,
+    "question": {
+      "pt": "Qual é a melhor forma de aquecer antes de um treino intenso?",
+      "en": "What is the best way to warm up before an intense workout?"
+    },
+    "options": {
+      "pt": ["Alongamentos estáticos longos", "Movimentos leves e progressivos", "Beber café e começar logo", "Ficar sentado a respirar fundo"],
+      "en": ["Long static stretches", "Light and progressive movement", "Drink coffee and start immediately", "Sit and breathe deeply"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "Um aquecimento dinâmico aumenta gradualmente a temperatura corporal, a circulação e a preparação das articulações para o esforço.",
+      "en": "A dynamic warm-up gradually increases body temperature, blood flow and joint readiness for effort."
+    }
+  },
+  {
+    "id": 22,
+    "question": {
+      "pt": "Qual destes é um exemplo de exercício cardiovascular?",
+      "en": "Which of these is an example of cardiovascular exercise?"
+    },
+    "options": {
+      "pt": ["Correr", "Rosca de bíceps", "Prancha abdominal", "Elevação lateral"],
+      "en": ["Running", "Biceps curl", "Plank", "Lateral raise"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Correr eleva a frequência cardíaca durante vários minutos e treina principalmente o sistema cardiovascular.",
+      "en": "Running raises the heart rate for several minutes and primarily trains the cardiovascular system."
+    }
+  },
+  {
+    "id": 23,
+    "question": {
+      "pt": "Qual mineral é importante para a função muscular e ajuda a prevenir cãibras?",
+      "en": "Which mineral is important for muscle function and helps prevent cramps?"
+    },
+    "options": {
+      "pt": ["Sódio", "Magnésio", "Flúor", "Iodo"],
+      "en": ["Sodium", "Magnesium", "Fluoride", "Iodine"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "O magnésio participa na contração e relaxamento muscular. Hidratação e eletrólitos adequados também são importantes.",
+      "en": "Magnesium is involved in muscle contraction and relaxation. Proper hydration and electrolytes also matter."
+    }
+  },
+  {
+    "id": 24,
+    "question": {
+      "pt": "O que significa 'progressão de carga' no treino de força?",
+      "en": "What does 'progressive overload' mean in strength training?"
+    },
+    "options": {
+      "pt": ["Treinar sempre até à falha", "Aumentar gradualmente o desafio", "Trocar de exercício todos os dias", "Usar apenas máquinas"],
+      "en": ["Always training to failure", "Gradually increasing the challenge", "Changing exercises every day", "Using only machines"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "A progressão de carga consiste em aumentar gradualmente peso, repetições, séries ou dificuldade para estimular adaptação.",
+      "en": "Progressive overload means gradually increasing weight, reps, sets or difficulty to stimulate adaptation."
+    }
+  },
+  {
+    "id": 25,
+    "question": {
+      "pt": "Qual destes alimentos é uma boa fonte de carboidratos complexos?",
+      "en": "Which of these foods is a good source of complex carbohydrates?"
+    },
+    "options": {
+      "pt": ["Aveia", "Refrigerante", "Manteiga", "Queijo curado"],
+      "en": ["Oats", "Soda", "Butter", "Aged cheese"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "A aveia fornece carboidratos complexos e fibra, libertando energia de forma mais gradual do que bebidas açucaradas.",
+      "en": "Oats provide complex carbohydrates and fibre, releasing energy more gradually than sugary drinks."
+    }
+  },
+  {
+    "id": 26,
+    "question": {
+      "pt": "Qual é uma função importante da fibra alimentar?",
+      "en": "What is an important function of dietary fibre?"
+    },
+    "options": {
+      "pt": ["Aumentar a absorção de álcool", "Ajudar a digestão e saciedade", "Substituir totalmente a proteína", "Eliminar a necessidade de água"],
+      "en": ["Increase alcohol absorption", "Support digestion and satiety", "Fully replace protein", "Remove the need for water"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "A fibra ajuda o trânsito intestinal, aumenta a saciedade e pode contribuir para melhor controlo da glicemia.",
+      "en": "Fibre supports bowel movement, increases satiety and can contribute to better blood sugar control."
+    }
+  },
+  {
+    "id": 27,
+    "question": {
+      "pt": "Qual músculo é mais trabalhado no agachamento?",
+      "en": "Which muscle is heavily worked during a squat?"
+    },
+    "options": {
+      "pt": ["Peitoral", "Quadríceps", "Bíceps", "Antebraço"],
+      "en": ["Chest", "Quadriceps", "Biceps", "Forearm"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "O agachamento trabalha fortemente os quadríceps, além de glúteos, posteriores da coxa e músculos do core.",
+      "en": "The squat strongly works the quadriceps, as well as the glutes, hamstrings and core muscles."
+    }
+  },
+  {
+    "id": 28,
+    "question": {
+      "pt": "O que é frequência cardíaca de repouso?",
+      "en": "What is resting heart rate?"
+    },
+    "options": {
+      "pt": ["Batimentos durante sprint", "Batimentos por minuto em repouso", "Pressão arterial máxima", "Número de respirações por treino"],
+      "en": ["Beats during a sprint", "Beats per minute at rest", "Maximum blood pressure", "Number of breaths per workout"]
+    },
+    "correctIndex": 1,
+    "explanation": {
+      "pt": "A frequência cardíaca de repouso é medida quando o corpo está em descanso e pode refletir a condição cardiovascular geral.",
+      "en": "Resting heart rate is measured when the body is at rest and can reflect overall cardiovascular fitness."
+    }
+  },
+  {
+    "id": 29,
+    "question": {
+      "pt": "Qual destes hábitos favorece a recuperação muscular?",
+      "en": "Which habit supports muscle recovery?"
+    },
+    "options": {
+      "pt": ["Dormir bem", "Ignorar dores fortes", "Treinar o mesmo músculo pesado todos os dias", "Comer sempre muito pouco"],
+      "en": ["Sleeping well", "Ignoring sharp pain", "Training the same muscle heavily every day", "Always eating very little"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Sono adequado, alimentação suficiente e descanso entre estímulos ajudam o corpo a reparar tecidos e adaptar-se ao treino.",
+      "en": "Adequate sleep, sufficient nutrition and rest between sessions help the body repair tissue and adapt to training."
+    }
+  },
+  {
+    "id": 30,
+    "question": {
+      "pt": "Qual é o principal objetivo dos alongamentos de mobilidade?",
+      "en": "What is the main goal of mobility exercises?"
+    },
+    "options": {
+      "pt": ["Melhorar amplitude e controlo de movimento", "Aumentar açúcar no sangue", "Reduzir proteína muscular", "Substituir todos os treinos"],
+      "en": ["Improve range and control of movement", "Increase blood sugar", "Reduce muscle protein", "Replace all workouts"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "A mobilidade combina amplitude de movimento com controlo ativo, ajudando na técnica e na prevenção de compensações.",
+      "en": "Mobility combines range of motion with active control, helping technique and reducing compensations."
+    }
+  },
+  {
+    "id": 31,
+    "question": {
+      "pt": "Qual destes sinais pode indicar desidratação?",
+      "en": "Which of these signs may indicate dehydration?"
+    },
+    "options": {
+      "pt": ["Urina muito escura", "Mais força instantânea", "Maior flexibilidade imediata", "Menos sede após sal"],
+      "en": ["Very dark urine", "Instantly more strength", "Immediate extra flexibility", "Less thirst after salt"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Urina muito escura pode ser sinal de hidratação insuficiente, embora medicamentos e alimentos também possam alterar a cor.",
+      "en": "Very dark urine can be a sign of insufficient hydration, though medicines and foods can also affect colour."
+    }
+  },
+  {
+    "id": 32,
+    "question": {
+      "pt": "Que tipo de treino melhora principalmente a força máxima?",
+      "en": "Which type of training mainly improves maximal strength?"
+    },
+    "options": {
+      "pt": ["Cargas pesadas com poucas repetições", "Caminhada lenta apenas", "Alongamento passivo longo", "Respiração sem resistência"],
+      "en": ["Heavy loads with low reps", "Slow walking only", "Long passive stretching", "Breathing without resistance"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Cargas relativamente pesadas e poucas repetições, com técnica e descanso adequados, são típicas do treino de força máxima.",
+      "en": "Relatively heavy loads and low reps, with good technique and rest, are typical of maximal strength training."
+    }
+  },
+  {
+    "id": 33,
+    "question": {
+      "pt": "Qual é uma boa fonte alimentar de ómega-3?",
+      "en": "Which food is a good source of omega-3?"
+    },
+    "options": {
+      "pt": ["Salmão", "Açúcar branco", "Batatas fritas", "Gelatina"],
+      "en": ["Salmon", "White sugar", "French fries", "Gelatin"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Peixes gordos como o salmão fornecem ómega-3, gorduras associadas à saúde cardiovascular e função cerebral.",
+      "en": "Fatty fish like salmon provide omega-3s, fats associated with cardiovascular health and brain function."
+    }
+  },
+  {
+    "id": 34,
+    "question": {
+      "pt": "Qual destes é um exemplo de exercício composto?",
+      "en": "Which of these is an example of a compound exercise?"
+    },
+    "options": {
+      "pt": ["Supino", "Extensão de tríceps isolada", "Elevação de gémeos sentado", "Curl de pulso"],
+      "en": ["Bench press", "Isolated triceps extension", "Seated calf raise", "Wrist curl"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "O supino envolve várias articulações e grupos musculares, incluindo peitoral, ombros e tríceps.",
+      "en": "The bench press involves multiple joints and muscle groups, including chest, shoulders and triceps."
+    }
+  },
+  {
+    "id": 35,
+    "question": {
+      "pt": "O que significa manter uma boa técnica durante o exercício?",
+      "en": "What does maintaining good form during exercise mean?"
+    },
+    "options": {
+      "pt": ["Mover-se com controlo e alinhamento", "Fazer sempre o mais rápido possível", "Prender a respiração o tempo todo", "Escolher peso aleatório"],
+      "en": ["Moving with control and alignment", "Always going as fast as possible", "Holding your breath the whole time", "Choosing random weight"]
+    },
+    "correctIndex": 0,
+    "explanation": {
+      "pt": "Boa técnica usa controlo, amplitude adequada e alinhamento para tornar o movimento mais eficiente e reduzir risco de lesão.",
+      "en": "Good form uses control, appropriate range and alignment to make movement more efficient and reduce injury risk."
+    }
   }
 ]
